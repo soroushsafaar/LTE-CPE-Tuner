@@ -1,0 +1,27 @@
+{
+  "name": "lte-cpe-tuner",
+  "version": "0.1.0",
+  "description": "Browser-console toolkit for LTE/TD-LTE CPE signal optimization, band/cell tuning, SINR angle scans, and WAN status parsing.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "parse": "node tools/parse-wan-status.mjs",
+    "demo": "node tools/parse-wan-status.mjs examples/wan-status-sample.txt",
+    "check": "node tools/smoke-test.mjs"
+  },
+  "keywords": [
+    "lte",
+    "td-lte",
+    "cpe",
+    "sinr",
+    "rsrq",
+    "band-lock",
+    "cell-lock",
+    "wan-status",
+    "router"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
